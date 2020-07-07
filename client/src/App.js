@@ -4,7 +4,10 @@ import './App.css';
 
 import books from './books.svg';
 
-import Login from './Login';
+import LoginForm from './Login/LoginForm.js';
+import LoginModal from './Login/LoginModal.js';
+import Header from './Frame/Header.js';
+import Container from '@material-ui/core/Container';
 
 function App() {
   return (
@@ -23,7 +26,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Login />
+      <Container maxWidth="lg">
+        <Header />
+      </Container>
       {/* <img src={books} className="App-logo" alt="logo" /> */}
     </div>
   );
