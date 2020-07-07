@@ -13,13 +13,16 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
+// Icons
+import LocalLibrary from '@material-ui/icons/LocalLibrary';
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Made with ♡ by '}
       <Link color="inherit" href="https://github.com/Julian-Sequeira">
         Julian Sequeira
-      </Link>{' '}
+      </Link>{', '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
@@ -54,10 +57,10 @@ export default function SignIn() {
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
+          <LocalLibrary />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          Literacy Adventures
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
@@ -95,7 +98,7 @@ export default function SignIn() {
           >
             Sign In
           </Button>
-          <Grid container>
+          {/* <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
                 Forgot password?
@@ -106,10 +109,10 @@ export default function SignIn() {
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>
-          </Grid>
+          </Grid> */}
         </form>
       </div>
-      <Box mt={8}>
+      <Box mt={5}>
         <Copyright />
       </Box>
     </Container>
