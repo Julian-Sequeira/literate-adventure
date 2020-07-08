@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
 const sections = [
   { title: 'Home', url: '#' },
   { title: 'Current Book', url: '#' },
-  { title: 'Discussion Questions (Spoilers)', url: '#' },
+  { title: 'Discussion Questions', url: '#' },
   { title: 'eBook Links', url: '#' },
   { title: 'Book Order', url: '#' },
   { title: 'Users', url: '#' },

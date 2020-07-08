@@ -1,13 +1,21 @@
+// Dependencies
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-import books from './books.svg';
-
-import LoginForm from './Login/LoginForm.js';
-import LoginModal from './Login/LoginModal.js';
+// Material UI Components
 import Header from './Frame/Header.js';
 import Container from '@material-ui/core/Container';
+
+// Custom Components
+import LoginForm from './Login/LoginForm.js';
+import LoginModal from './Login/LoginModal.js';
+import Current from './Pages/Current.js';
+
+// Icons & Logos
+import books from './books.svg';
+import logo from './logo.svg';
+
+
 
 function App() {
   return (
@@ -28,6 +36,7 @@ function App() {
       </header> */}
       <Container maxWidth="lg">
         <Header />
+        <Current />
       </Container>
       {/* <img src={books} className="App-logo" alt="logo" /> */}
     </div>

@@ -65,7 +65,7 @@ export default function SignIn() {
           <MenuBook />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign Into the Literacy Club
+          Literacy Club Sign In
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
