@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 
 
 // Custom Components
-import cover from '../Images/THUG.jpg';
+import cover from '../../Images/THUG.jpg';
 
 // CSS styling for the current book card
 const useStyles = makeStyles((theme) => ({
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Current() {
+export default function Book() {
   const classes = useStyles();
 
   return (
@@ -35,7 +35,6 @@ export default function Current() {
       <CardHeader title="The Hate U Give" subheader="Angie Thomas"/>
       <CardMedia
         className={classes.media}
-        // style={{height: 0, paddingTop: '56.25%'}}
         image={cover}
         title="Book Cover"
       />
@@ -46,7 +45,4 @@ export default function Current() {
       </CardContent>
     </Card>
   )
-
-
-
 }

@@ -3,13 +3,14 @@ import React from 'react';
 import './App.css';
 
 // Material UI Components
-import Header from './Frame/Header.js';
+import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 
 // Custom Components
-import LoginForm from './Login/LoginForm.js';
-import LoginModal from './Login/LoginModal.js';
-import Current from './Pages/Current.js';
+import LoginForm from './Login/LoginForm';
+import LoginModal from './Login/LoginModal';
+import Current from './Pages/Current';
+import Header from './Frame/Header';
 
 // Icons & Logos
 import books from './books.svg';
@@ -36,7 +37,9 @@ function App() {
       </header> */}
       <Container maxWidth="lg">
         <Header />
-        <Current />
+        <Box mt={2}>
+          <Current />
+        </Box>
       </Container>
       {/* <img src={books} className="App-logo" alt="logo" /> */}
     </div>
