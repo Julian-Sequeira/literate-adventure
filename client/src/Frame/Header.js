@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 
 // Define the header sections here
 const sections = [
-  // { title: 'Rules', url: '#' },
+  { title: 'Home', url: '#' },
   { title: 'Current Book', url: '#' },
   { title: 'Discussion Questions (Spoilers)', url: '#' },
   { title: 'eBook Links', url: '#' },

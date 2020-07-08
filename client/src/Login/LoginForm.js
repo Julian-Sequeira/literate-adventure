@@ -62,10 +62,10 @@ export default function SignIn() {
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
+          <MenuBook />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign In Ya Idiots
+          Sign Into the Literacy Club
         </Typography>
         <form className={classes.form} noValidate>
           <TextField

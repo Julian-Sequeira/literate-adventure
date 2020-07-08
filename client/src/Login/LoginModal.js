@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 // Material UI Components
 import Button from '@material-ui/core/Button';
 import Modal from '@material-ui/core/Modal';
+import Fade from '@material-ui/core/Fade';
 
 // Custom Components
 import LoginForm from './LoginForm.js';
@@ -70,10 +71,15 @@ export default function SimpleModal() {
       <Modal
         open={open}
         onClose={handleClose}
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
+        aria-labelledby="Login Form"
+        aria-describedby="Login Form"
       >
-        {body}
+        <Fade 
+          in={open}
+          number={{enter: 50, exit: 5}}
+        >
+          {body}
+        </Fade> 
       </Modal>
     </div>
   );
