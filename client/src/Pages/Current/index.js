@@ -6,7 +6,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 // Custom Components
-import Book from "./Book.js";
+import Book from "./Book";
+import Description from "./Description";
 
 // Styling for our page grid
 const useStyles = makeStyles((theme) => ({
@@ -16,15 +17,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Current() {
-
   const classes = useStyles();
 
   return (
     <React.Fragment>
-      <Grid className={classes.root} spacing={2}>
-        <Book/> 
+      <Grid container className={classes.root} spacing={3}>
+        <Grid item xs={4}>
+          <Book />
+        </Grid> 
+        <Grid item xs={8}>
+          <Description />
+        </Grid>
       </Grid>
-      {/* <Book/> */}
     </React.Fragment>
     
     
