@@ -11,27 +11,12 @@ import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 
 // Icons
 import MenuBook from '@material-ui/icons/MenuBook';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
-// Footer
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Made with ♡ by '}
-      <Link color="inherit" href="https://github.com/Julian-Sequeira">
-        Julian Sequeira
-      </Link>{', '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 // Styling for the login form
 const useStyles = makeStyles((theme) => ({

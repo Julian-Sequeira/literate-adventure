@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 // Custom Components
 import Book from "./Book";
 import Description from "./Description";
+import Quotes from "./Quotes";
 
 // Styling for our page grid
 const useStyles = makeStyles((theme) => ({
@@ -27,6 +28,9 @@ export default function Current() {
         </Grid> 
         <Grid item xs={8}>
           <Description />
+        </Grid>
+        <Grid item xs={12}>
+          <Quotes/>
         </Grid>
       </Grid>
     </React.Fragment>

@@ -10,12 +10,9 @@ import Container from '@material-ui/core/Container';
 
 // Frames
 import Header from './Frame/Header';
-import Footer from './Frame/Footer';
 import Copyright from './Frame/Copyright';
 
 // Pages
-import LoginForm from './Login/LoginForm';
-import LoginModal from './Login/LoginModal';
 import Current from './Pages/Current';
 
 
