@@ -51,10 +51,15 @@ const StyledTableRow = withStyles((theme) => ({
 
 // Mock data to make the table
 // Will take this data from a database in the future
+function dataWrap(quote) {
+  return { quote }
+}
+
+
 const data = [
-  "Get me some beef ribs from Reuben's. And I want - Potato salad and fried okra",
-  "I'm thinking, Oh so you can drag me to play basketball during one of your feminist rages, but you can't follow my Tumblr because of Emmett Till?",
-  "After lunch we gather in the living room, join hands, and bow our heads. 'Black Jesus, thank you for this blessing,' Daddy says. "
+  dataWrap("Get me some beef ribs from Reuben's. And I want - Potato salad and fried okra"),
+  dataWrap("I'm thinking, Oh so you can drag me to play basketball during one of your feminist rages, but you can't follow my Tumblr because of Emmett Till?"),
+  dataWrap("After lunch we gather in the living room, join hands, and bow our heads. 'Black Jesus, thank you for this blessing,' Daddy says. ")
 ]
 
 export default function Book() {
@@ -72,7 +77,21 @@ export default function Book() {
         </Typography>
       </AccordionSummary>
       <AccordionDetails>
-        
+        <Table className={classes.table} aria-label="quotes table">
+          <TableBody>
+            {data.map((row) => (
+              <StyledTableRow>
+                <StyledTableCell>
+                  {row.quote}
+                </StyledTableCell>
+              </StyledTableRow>
+            ))}
+          </TableBody>
+
+
+
+
+        </Table>
       </AccordionDetails>
     </Accordion>
   )

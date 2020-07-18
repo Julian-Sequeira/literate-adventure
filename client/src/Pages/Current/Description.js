@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 // Material UI Components
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Divider from '@material-ui/core/Divider';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
@@ -30,6 +31,7 @@ export default function Description() {
         <Typography gutterBottom variant="h5" component="h2">
             Description
         </Typography>
+        <Divider />
         <Typography variant="body1">
         <p>
         Sixteen-year-old Starr Carter moves 
